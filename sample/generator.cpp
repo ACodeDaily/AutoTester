@@ -3,9 +3,9 @@ using namespace std;
 const int MAX = 3;
 int main()
 {
-	srand(time(NULL));
-	int l = rand() % MAX + 1;
-	int r = rand() % MAX + 1;
-	if(l > r) swap(l, r);
-	cout << l << " " << r;
+	int n=rand()%((int)1e5);
+	cout<<"1\n";		//testcase
+	cout<<n<<"\n";							// n  
+	cout<<(rand()%(n*26))<<" "<<(rand()%(n*26))<<"\n";		// p q
+	for(int i=0;i<n;i++)	cout<<'a'+rand()%26;
 }
